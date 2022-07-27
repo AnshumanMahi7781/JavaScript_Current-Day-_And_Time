@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Current Day and Time</title>
     <link rel="stylesheet" href="./Index.css" />
-    <script src="./indexJs.js"></script>
   </head>
   <body>
     <h3>Show Date, Time and Day Using JavaScript Function</h3>
@@ -18,7 +17,7 @@
       <p id="show-month">Month</p>
       <p id="show-year">Year</p>
     </div>
-    <!--  -->
+    
     <div class="show-dayTime">
       <h2>This box display the Current Day and Time</h2>
       <div>
@@ -41,14 +40,13 @@
       document.getElementById("show-date").innerHTML = cdate;
       document.getElementById("show-month").innerHTML = month;
       document.getElementById("show-year").innerHTML = year;
-      //
+      
 
       // This code show the current day and time
       let day = date.getDay();
       let hours = date.getHours();
       let Min = date.getMinutes();
       let Sec = date.getSeconds();
-      //   setInterval(displayTime, 1000);
       if (day == 0) {
         document.getElementById("show-day").innerHTML = "Sunday";
       } else if (day == 1) {
