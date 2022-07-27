@@ -1,0 +1,52 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  h3 {
+    width: 100%;
+    background-color: darkgoldenrod;
+    color: white;
+    text-align: center;
+    padding: 20px 0px;
+  }
+  .CurrentDateBox {
+    border: 3px solid red;
+    background-color: rgb(102, 56, 24);
+    height: 20vh;
+    width: 50%;
+    margin: 30px auto;
+  }
+  h2 {
+    text-align: center;
+    color: white;
+    border: 1px solid red;
+  }
+  label {
+    margin-top: 45px;
+    font-weight: bolder;
+    color: white;
+    float: left;
+  }
+  p {
+    font-family: "Courier New", Courier, monospace;
+   
+    font-weight: bolder;
+    width: 100px;
+    border: 2px solid black;
+    text-align: center;
+    padding: 3px 10px;
+    margin-left: 20px;
+    margin-top: 40px;
+    float: left;
+    background-color: white;
+  }
+  .show-dayTime {
+    border: 3px solid red;
+    background-color: rgb(102, 56, 24);
+    height: 30vh;
+    width: 50%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+   
+  }

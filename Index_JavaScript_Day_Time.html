@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Current Day and Time</title>
+    <link rel="stylesheet" href="./Index.css" />
+    <script src="./indexJs.js"></script>
+  </head>
+  <body>
+    <h3>Show Date, Time and Day Using JavaScript Function</h3>
+    <!-- This box for current date in DD/MM/YY formate -->
+    <div class="CurrentDateBox">
+      <h2>This box display the Current Date</h2>
+      <label for=""> Current Date (DD/MM/YY) Formate</label>
+      <p id="show-date">Date</p>
+      <p id="show-month">Month</p>
+      <p id="show-year">Year</p>
+    </div>
+    <!--  -->
+    <div class="show-dayTime">
+      <h2>This box display the Current Day and Time</h2>
+      <div>
+        <label for="show-day">Today Is: </label>
+        <p id="show-day">day</p>
+      </div>
+      <div>
+        <label for="show-time">Current Time Is(HH/MM/SS): </label>
+        <p id="show-hour">time</p>
+        <p id="show-min">time</p>
+        <p id="show-sec">time</p>
+      </div>
+    </div>
+    <script>
+      // Show Current Date in DD/MM/YY Formate
+      const date = new Date();
+      let cdate = date.getDate();
+      let month = date.getMonth() + 1;
+      let year = date.getFullYear();
+      document.getElementById("show-date").innerHTML = cdate;
+      document.getElementById("show-month").innerHTML = month;
+      document.getElementById("show-year").innerHTML = year;
+      //
+
+      // This code show the current day and time
+      let day = date.getDay();
+      let hours = date.getHours();
+      let Min = date.getMinutes();
+      let Sec = date.getSeconds();
+      //   setInterval(displayTime, 1000);
+      if (day == 0) {
+        document.getElementById("show-day").innerHTML = "Sunday";
+      } else if (day == 1) {
+        document.getElementById("show-day").innerHTML = "Monday";
+      } else if (day == 2) {
+        document.getElementById("show-day").innerHTML = "Tuesday";
+      } else if (day == 3) {
+        document.getElementById("show-day").innerHTML = "Wednesday";
+      } else if (day == 4) {
+        document.getElementById("show-day").innerHTML = "Thursday";
+      } else if (day == 5) {
+        document.getElementById("show-day").innerHTML = "Friday";
+      } else if (day == 6) {
+        document.getElementById("show-day").innerHTML = "Saturday";
+      }
+      document.getElementById("show-hour").innerHTML = hours;
+      document.getElementById("show-min").innerHTML = Min;
+      document.getElementById("show-sec").innerHTML = Sec;
+    </script>
+  </body>
+</html>
